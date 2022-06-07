@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun  5 08:15:05 2022
+# Make data base, printed on Tue Jun  7 08:14:21 2022
 
 # Variables
 
@@ -21,7 +21,9 @@ GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ae4fa141-ade1-4140-a36d-baf9cb0dd7e9.sock
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5aa2b462-e39c-4078-a845-22c58ca7b616.sock
 # environment
 LC_NAME = zh_CN.UTF-8
 # environment
@@ -63,13 +65,11 @@ VSCODE_CODE_CACHE_PATH = /home/smile/.config/Code/CachedData/c3511e6c69bb39013c4
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.EVCWM1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.RBP2M1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
-# environment
-GNOME_TERMINAL_SERVICE = :1.120
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -101,13 +101,13 @@ ZSH = /home/smile/.oh-my-zsh
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4367
+VSCODE_PID = 39068
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/smile-1994:@/tmp/.ICE-unix/2129,unix/smile-1994:/tmp/.ICE-unix/2129
+SESSION_MANAGER = local/smile-1994:@/tmp/.ICE-unix/1984,unix/smile-1994:/tmp/.ICE-unix/1984
 # automatic
 *F = $(notdir $*)
 # environment
@@ -129,15 +129,15 @@ MAKECMDGOALS := all
 # environment
 XMODIFIERS = @im=ibus
 # environment
-SHLVL = 1
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/3fe4e886_a203_4538_a1ad_0e957f9be5ec
+SHLVL = 0
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/smile/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/usr/local/GoLand-2022.1/bin
+PATH = /home/smile/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/usr/local/GoLand-2022.1/bin:/home/smile/.pub-cache/bin:/home/smile/gocode/bin
 # default
 MAKEFILES := 
 # environment
@@ -148,6 +148,8 @@ LC_MONETARY = zh_CN.UTF-8
 ^F = $(notdir $^)
 # environment
 LC_TIME = zh_CN.UTF-8
+# environment
+INVOCATION_ID = a93f89a7f26c4888b8527d733ba13c89
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -161,7 +163,7 @@ LC_TELEPHONE = zh_CN.UTF-8
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -174,10 +176,12 @@ ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 GNUMAKEFLAGS := 
 # environment
 LOGNAME = smile
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 2324
+SYSTEMD_EXEC_PID = 2016
 # environment
 DISPLAY = :0
 # environment
@@ -187,17 +191,21 @@ GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
 # default
 MAKE_VERSION := 4.3
 # environment
+MANAGERPID = 1818
+# environment
 LC_MEASUREMENT = zh_CN.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 39068
 # environment
 PAGER = less
 # environment
-_ = /usr/bin/code
+_ = /usr/share/code/code
 # environment
 LC_PAPER = zh_CN.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-COLORTERM = truecolor
+JOURNAL_STREAM = 8:32375
 # environment
 GOMODCACHE = /home/smile/gocode/pkg/mod
 # environment
@@ -213,8 +221,6 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-3f235d2f-1.67.2-main.sock
 # environment
-TERM = xterm-256color
-# environment
 GOPROXY = https://goproxy.cn,direct
 # default
 .RECIPEPREFIX := 
@@ -222,12 +228,6 @@ GOPROXY = https://goproxy.cn,direct
 <F = $(notdir $<)
 # default
 SUFFIXES := 
-# environment
-VSCODE_CLI = 1
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-VTE_VERSION = 6800
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
@@ -237,7 +237,7 @@ GDMSESSION = ubuntu
 # environment
 LC_IDENTIFICATION = zh_CN.UTF-8
 # variable set hash-table stats:
-# Load=112/1024=11%, Rehash=0, Collisions=11/142=8%
+# Load=112/1024=11%, Rehash=0, Collisions=5/142=4%
 
 # Pattern-specific Variable Values
 
@@ -245,9 +245,9 @@ LC_IDENTIFICATION = zh_CN.UTF-8
 
 # Directories
 
-# . (device 66306, inode 15211471): 11 files, no impossibilities.
+# . (device 66306, inode 15211471): 14 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -266,7 +266,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-03 15:09:25.577971545
+#  Last modified 2022-06-05 11:21:17.490253558
 #  File has been updated.
 #  Successfully updated.
 
@@ -278,6 +278,13 @@ dropdb:
 #  recipe to execute (from 'Makefile', line 6):
 	docker exec -it postgres12 dropdb  simple_bank
 
+server:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
+	go run main.go
+
 migrateup:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -288,8 +295,8 @@ migrateup:
 
 # Not a target:
 .DEFAULT:
- 
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -338,19 +345,19 @@ createdb:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/29=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/30=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 186 B / avg = 7 B
-# current buf: size = 8162 B / used = 186 B / count = 24 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 212 B / avg = 7 B
+# current buf: size = 8162 B / used = 212 B / count = 28 / avg = 7 B
 
-# strcache performance: lookups = 43 / hit rate = 44%
+# strcache performance: lookups = 48 / hit rate = 41%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=0/43=0%
-# Finished Make data base on Sun Jun  5 08:15:05 2022
+# Load=28/8192=0%, Rehash=0, Collisions=0/48=0%
+# Finished Make data base on Tue Jun  7 08:14:21 2022
 
  

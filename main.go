@@ -1,34 +1,28 @@
 package main
 
 import (
-	"fmt"
-	"time"
+	"database/sql"
+	"log"
+
+	_ "github.com/lib/pq"
+	"github.com/vitaLemoTea/myBank/api"
+	"github.com/vitaLemoTea/myBank/config"
+	db "github.com/vitaLemoTea/myBank/db/sqlc"
 )
 
-//model
-var singers = []singer{}
-
-type singer struct {
-	name string
-}
-
-type song struct {
-	name   string
-	singer singer
-	date   time.Time
-}
-
-func Scans(message string, a interface{}) {
-	fmt.Println(message)
-	fmt.Scan(a)
-}
-
 func main() {
-	var first_name, last_name string
-	i, err := fmt.Sscan("ou qingjia", &first_name, &last_name)
+	config, err := config.LoadConfig(".")
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal("cannot load configs:", err)
 	}
-	fmt.Println(i)
-	fmt.Println(first_name + last_name)
+	conn, err := sql.Open(config.DBDriver, config.DBSource)
+	if err != nil {
+		log.Fatalf("cannot connect to db :%v", err)
+	}
+	store := db.NewStore(conn)
+	server := api.NewServer(store)
+	err = server.Start(config.ServerAddress)
+	if err != nil {
+		log.Fatal("cannot start server :", err)
+	}
 }
