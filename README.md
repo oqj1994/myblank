@@ -1,2 +1,0 @@
-# myblank
-gin+ postgres + docker
